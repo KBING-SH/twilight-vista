@@ -134,7 +134,7 @@ export function TestimonialsSection() {
           What Users Say
         </h2>
         <p className="text-sm md:text-base text-body-desc text-center max-w-lg mx-auto">
-          Sample feedback from users who tried Rita for cartoon-style image creation.
+          Sample feedback from users who tried Rita's free AI image editor.
         </p>
       </div>
 

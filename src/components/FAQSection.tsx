@@ -4,32 +4,36 @@ import { cn } from "@/lib/utils";
 
 const faqs = [
   {
-    q: "What is AI Photo to Cartoon?",
-    a: "AI Photo to Cartoon is a technology that transforms your photos into cartoon-style images using artificial intelligence.",
+    q: "What is a free image editor AI and what can it do?",
+    a: "A free image editor AI is an online tool that helps you edit and improve images with less manual work. It can be used for tasks like enhancing photos, changing backgrounds, adjusting colors, applying styles, and making other common visual edits more easily.",
   },
   {
-    q: "How does AI Photo to Cartoon work?",
-    a: "AI Photo to Cartoon uses AI algorithms to analyze your photo and recreate it with cartoon-like features and effects.",
+    q: "How does a free image editor AI create edits from uploaded photos?",
+    a: "The editor analyzes the uploaded image and applies changes based on the options or instructions you provide. It can handle things like visual refinements, background updates, style changes, and other edits while keeping the main subject of the photo recognizable.",
   },
   {
-    q: "Can I use AI Photo to Cartoon for any photo?",
-    a: "AI Photo to Cartoon works best with clear, well-lit photos, but it can be applied to most types of images.",
+    q: "Can I use a free image editor AI to edit any type of photo?",
+    a: "Yes, it can be used with many types of photos. You can upload different kinds of images and apply edits such as enhancements, style changes, background adjustments, or other simple visual updates.",
   },
   {
-    q: "Is AI Photo to Cartoon easy to use?",
-    a: "Yes, AI Photo to Cartoon tools are designed to be user-friendly, allowing you to convert photos into cartoons quickly.",
+    q: "Does the free image editor AI require complex steps to make edits?",
+    a: "No, the process is usually simple. You upload your image, choose or describe the changes you want, and the AI applies the edits for you without requiring advanced manual editing.",
   },
   {
-    q: "Are the results from AI Photo to Cartoon customizable?",
-    a: "Some AI Photo to Cartoon tools offer options to adjust the style or intensity of the cartoon effect.",
+    q: "What kind of visual results can I expect from using a free image editor AI?",
+    a: "The results depend on the type of edit you choose, but in general you can expect images that look cleaner, more polished, or more visually distinctive after the changes are applied.",
   },
   {
-    q: "Can AI Photo to Cartoon be used for professional purposes?",
-    a: "AI Photo to Cartoon can be used for various purposes, including personal and creative projects, depending on the quality needed.",
+    q: "Is the free image editor AI suitable for improving profile pictures?",
+    a: "Yes, it can be a useful option for profile pictures. It can help improve the overall look of an image through adjustments such as cleaner presentation, background changes, or light style edits.",
   },
   {
-    q: "Is AI Photo to Cartoon safe to use?",
-    a: "AI Photo to Cartoon services generally prioritize user privacy and data security, but it's good to review each service's policies.",
+    q: "Does the free image editor AI support image enhancement besides style effects?",
+    a: "Yes, it can also be used for general image enhancement. Depending on the tool, this may include improving details, refining the overall look, adjusting visual elements, and making the image feel more polished.",
+  },
+  {
+    q: "How does the free image editor AI simplify the image editing process?",
+    a: "It simplifies editing by handling many changes automatically after you upload an image and choose what you want to adjust. This reduces manual work and makes it easier to get usable results more quickly.",
   },
 ];
 
