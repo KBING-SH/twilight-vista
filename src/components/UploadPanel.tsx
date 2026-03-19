@@ -216,12 +216,12 @@ export function UploadPanel({ onGenerate, externalStyleRef }: { onGenerate?: (st
           <div className="flex flex-wrap gap-1.5 mt-1">
             {PROMPT_SHORTCUTS.map((shortcut) => (
               <button
-                key={shortcut}
+                key={shortcut.label}
                 type="button"
-                onClick={() => setPromptText((prev) => prev ? `${prev}, ${shortcut}` : shortcut)}
+                onClick={() => setPromptText((prev) => prev ? `${prev}, ${shortcut.prompt}` : shortcut.prompt)}
                 className="px-2.5 py-1 rounded-md border border-border/50 bg-card text-xs text-body2 hover:border-primary/50 hover:text-primary transition-colors"
               >
-                {shortcut}
+                {shortcut.label}
               </button>
             ))}
           </div>
