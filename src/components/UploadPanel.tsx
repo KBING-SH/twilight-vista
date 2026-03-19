@@ -218,7 +218,7 @@ export function UploadPanel({ onGenerate, externalStyleRef }: { onGenerate?: (st
               <button
                 key={shortcut.label}
                 type="button"
-                onClick={() => setPromptText((prev) => prev ? `${prev}, ${shortcut.prompt}` : shortcut.prompt)}
+                onClick={() => setPromptText(shortcut.prompt)}
                 className="px-2.5 py-1 rounded-md border border-border/50 bg-card text-xs text-body2 hover:border-primary/50 hover:text-primary transition-colors"
               >
                 {shortcut.label}
