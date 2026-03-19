@@ -113,10 +113,10 @@ const Index = () => {
               <div className="px-3 py-4 space-y-3">
                 <div className="text-center">
                   <h1 className="text-xl font-bold text-title leading-tight mb-1.5">
-                    Free Online Photo to Cartoon
+                    Free AI Image Editor
                   </h1>
                   <p className="text-muted-foreground text-xs leading-relaxed max-w-xs mx-auto">
-                    Upload your photo and Rita AI will generate fun cartoon images in multiple styles. Supports portraits, pets, landscapes and more — simple to use, ready in seconds.
+                    Create stunning edits in seconds, powered by AI that makes design simple for everyone.
                   </p>
                 </div>
                 <div className="w-full aspect-[16/9] rounded-xl overflow-hidden">
