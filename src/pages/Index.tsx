@@ -236,7 +236,10 @@ const Index = () => {
           <ToolFeatures />
           <HowItWorks />
           
-          <ContentSections onSelectStyle={handleSelectStyle} />
+          <ContentSections onSelectStyle={handleSelectStyle} onSetPrompt={(prompt) => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+            promptSetterRef.current?.(prompt);
+          }} />
           <WhyChoose />
           <TestimonialsSection />
           <FAQSection />
