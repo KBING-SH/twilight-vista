@@ -19,6 +19,7 @@ const sections = [
     paragraphs: [
       "An AI image editor is an easy online tool that helps you edit photos quickly and without hassle. Upload your image, describe the result you want, and get it in moments. From improving image quality to removing backgrounds or testing creative styles, everything is available in one free place.",
     ],
+    prompt: "Enhance this photo to improve overall quality, sharpness, and color balance while keeping it natural",
     imageFirst: true,
   },
   {
@@ -31,6 +32,7 @@ const sections = [
     paragraphs: [
       "This AI image editor is recommended because it makes photo editing simple and efficient. You can upload an image, choose a model, or enter a prompt to create results in seconds. It also supports quick re-edits and downloads in multiple formats, all online and free to use.",
     ],
+    prompt: "Replace the background with a clean, professional studio setting while keeping the subject intact",
     imageFirst: false,
   },
   {
@@ -43,6 +45,7 @@ const sections = [
     paragraphs: [
       "Traditional image editing can be time-consuming and difficult, especially when you need to remove backgrounds or apply visual styles. Professional software can also be expensive. An AI image editor offers a faster, easier, and free way to get the results you need.",
     ],
+    prompt: "Remove unwanted objects from the background and fill the area naturally to match the surrounding scene",
     imageFirst: true,
   },
 ];
