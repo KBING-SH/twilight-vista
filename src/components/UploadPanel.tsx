@@ -6,6 +6,8 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Select, SelectContent, SelectItem, SelectTrigger } from "@/components/ui/select";
 import { cn } from "@/lib/utils";
 
+const PROMPT_SHORTCUTS = ["replace background", "sketch-to-storyboard", "change hair color", "switch clothing", "expression adjuster", "object remover"];
+
 
 import logoChatgpt from "@/assets/logo-chatgpt.png";
 import logoBanana from "@/assets/logo-banana.png";
@@ -198,9 +200,24 @@ export function UploadPanel({ onGenerate, externalStyleRef }: { onGenerate?: (st
           <textarea
             value={promptText}
             onChange={(e) => setPromptText(e.target.value)}
-            placeholder="Describe how you want to process the image..."
+            placeholder='Describe your editing requirements, such as "Remove the person in the background".'
             className="w-full h-[54px] md:h-14 lg:h-24 rounded-lg border border-border/50 bg-card px-3 py-1.5 text-sm text-title placeholder:text-body-desc resize-none md:resize-none lg:resize-y focus:outline-none focus:ring-1 focus:ring-primary/50"
           />
+          <div className="flex items-center gap-1 mt-1 text-xs text-muted-foreground justify-end">
+            <span>{promptText.length}/4096</span>
+          </div>
+          <div className="flex flex-wrap gap-1.5 mt-1">
+            {PROMPT_SHORTCUTS.map((shortcut) => (
+              <button
+                key={shortcut}
+                type="button"
+                onClick={() => setPromptText((prev) => prev ? `${prev}, ${shortcut}` : shortcut)}
+                className="px-2.5 py-1 rounded-md border border-border/50 bg-card text-xs text-body2 hover:border-primary/50 hover:text-primary transition-colors"
+              >
+                {shortcut}
+              </button>
+            ))}
+          </div>
         </div>
 
 
