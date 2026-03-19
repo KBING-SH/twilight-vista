@@ -6,7 +6,14 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Select, SelectContent, SelectItem, SelectTrigger } from "@/components/ui/select";
 import { cn } from "@/lib/utils";
 
-const PROMPT_SHORTCUTS = ["replace background", "sketch-to-storyboard", "change hair color", "switch clothing", "expression adjuster", "object remover"];
+const PROMPT_SHORTCUTS: { label: string; prompt: string }[] = [
+  { label: "replace background", prompt: "Replace the background with a clean, professional studio setting while keeping the subject intact" },
+  { label: "sketch-to-storyboard", prompt: "Convert this sketch into a polished storyboard panel with clear outlines, shading, and cinematic framing" },
+  { label: "change hair color", prompt: "Change the hair color to a natural-looking shade while preserving the hair texture and lighting" },
+  { label: "switch clothing", prompt: "Replace the current outfit with a modern casual look while maintaining the body pose and proportions" },
+  { label: "expression adjuster", prompt: "Adjust the facial expression to a warm, natural smile while keeping the rest of the face and features unchanged" },
+  { label: "object remover", prompt: "Remove unwanted objects from the background and fill the area naturally to match the surrounding scene" },
+];
 
 
 import logoChatgpt from "@/assets/logo-chatgpt.png";
