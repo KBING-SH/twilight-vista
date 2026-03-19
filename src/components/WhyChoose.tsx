@@ -4,7 +4,7 @@ const features = [
   {
     icon: Zap,
     title: "Simple Workflow",
-    desc: "Upload a photo, choose a style, and generate a cartoon image in a few steps — get started quickly with no complicated setup.",
+    desc: "Upload a photo, describe your edit, and generate in a few steps — get started quickly with no complicated setup.",
     accent: "from-[hsl(45,100%,60%)] to-[hsl(30,95%,55%)]",
     iconBg: "bg-gradient-to-br from-[hsl(45,100%,60%)] to-[hsl(30,95%,55%)]",
     stat: "3",
@@ -13,7 +13,7 @@ const features = [
   {
     icon: Wand2,
     title: "Multiple AI Models",
-    desc: "Powered by multiple AI models for different visual styles, ensuring varied and expressive cartoon generation results.",
+    desc: "Powered by multiple AI models for different editing needs, ensuring versatile and high-quality image editing results.",
     accent: "from-[hsl(240,74%,61%)] to-[hsl(280,65%,60%)]",
     iconBg: "bg-gradient-to-br from-[hsl(240,74%,61%)] to-[hsl(280,65%,60%)]",
     stat: "7+",
@@ -22,7 +22,7 @@ const features = [
   {
     icon: Download,
     title: "High-Quality Output",
-    desc: "Download ready-to-use cartoon images suitable for social avatars, content creation, and personal projects.",
+    desc: "Download ready-to-use edited images suitable for social media, content creation, and professional projects.",
     accent: "from-[hsl(162,63%,50%)] to-[hsl(180,60%,45%)]",
     iconBg: "bg-gradient-to-br from-[hsl(162,63%,50%)] to-[hsl(180,60%,45%)]",
     stat: "HD",
@@ -30,17 +30,17 @@ const features = [
   },
   {
     icon: Sparkles,
-    title: "Multiple Styles",
-    desc: "Explore different cartoon looks including Ghibli, Pixel, Ink, Retro, and more — one photo, multiple creative options.",
+    title: "Versatile Editing",
+    desc: "From background removal to style changes, color adjustments, and enhancements — handle a wide range of edits in one place.",
     accent: "from-[hsl(340,75%,55%)] to-[hsl(300,60%,55%)]",
     iconBg: "bg-gradient-to-br from-[hsl(340,75%,55%)] to-[hsl(300,60%,55%)]",
-    stat: "8+",
-    statLabel: "Styles",
+    stat: "10+",
+    statLabel: "Edit Types",
   },
   {
     icon: Paintbrush,
     title: "Custom Prompts",
-    desc: "Enter your own prompts to guide cartoon effect details and mood, creating personalized results tailored to your vision.",
+    desc: "Enter your own prompts to describe exactly what you want — create personalized edits tailored to your vision.",
     accent: "from-[hsl(200,80%,55%)] to-[hsl(220,75%,55%)]",
     iconBg: "bg-gradient-to-br from-[hsl(200,80%,55%)] to-[hsl(220,75%,55%)]",
     stat: "∞",
@@ -67,7 +67,7 @@ export function WhyChoose() {
           Why Choose Rita
         </h2>
         <p className="text-sm md:text-base text-body-desc text-center mb-8 md:mb-14 max-w-xl mx-auto">
-          Powerful AI + simple workflow — making cartoon creation accessible to everyone
+          Powerful AI + simple workflow — making image editing accessible to everyone
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
