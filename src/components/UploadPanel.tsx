@@ -94,6 +94,13 @@ export function UploadPanel({ onGenerate, externalStyleRef, externalPromptRef }:
     };
   }
 
+  // Expose a method to set prompt externally
+  if (externalPromptRef) {
+    externalPromptRef.current = (prompt: string) => {
+      setPromptText(prompt);
+    };
+  }
+
   const handleDragOver = (e: React.DragEvent) => { e.preventDefault(); setIsDragging(true); };
   const handleDragLeave = () => setIsDragging(false);
 

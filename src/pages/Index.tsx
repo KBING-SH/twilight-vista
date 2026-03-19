@@ -33,6 +33,7 @@ const Index = () => {
   const [selectedHistoryIdx, setSelectedHistoryIdx] = useState<number | null>(null);
   const [previewIdx, setPreviewIdx] = useState<number | null>(null);
   const styleSetterRef = useRef<((styleIndex: number) => void) | null>(null);
+  const promptSetterRef = useRef<((prompt: string) => void) | null>(null);
 
   const handleSelectStyle = useCallback((styleIndex: number) => {
     window.scrollTo({ top: 0, behavior: "smooth" });
