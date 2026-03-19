@@ -61,7 +61,6 @@ export function ContentSections({ onSelectStyle, onSetPrompt }: { onSelectStyle?
     if (onSetPrompt && section.prompt) {
       onSetPrompt(section.prompt);
     }
-    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
