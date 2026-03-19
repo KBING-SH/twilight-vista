@@ -97,7 +97,7 @@ const Index = () => {
 
         {/* Left sidebar - desktop */}
         <aside className="hidden lg:flex lg:w-[30%] shrink-0 border-r border-border/50 bg-card">
-          <UploadPanel onGenerate={handleGenerate} externalStyleRef={styleSetterRef} />
+          <UploadPanel onGenerate={handleGenerate} externalStyleRef={styleSetterRef} externalPromptRef={promptSetterRef} />
         </aside>
 
         {/* Mobile/Tablet: UploadPanel + Result */}
