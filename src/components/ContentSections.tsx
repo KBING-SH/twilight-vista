@@ -53,24 +53,15 @@ const sections = [
 // Map section index to style index: 0=Ghibli, 1=Cartoon, 2=Ink
 const SECTION_STYLE_MAP = [0, 1, 3];
 
-export function ContentSections({ onSelectStyle }: { onSelectStyle?: (styleIndex: number) => void }) {
+export function ContentSections({ onSelectStyle, onSetPrompt }: { onSelectStyle?: (styleIndex: number) => void; onSetPrompt?: (prompt: string) => void }) {
   const [showTooltip, setShowTooltip] = useState(false);
 
   const handleTryNow = (sectionIndex: number) => {
-    if (onSelectStyle) {
-      onSelectStyle(SECTION_STYLE_MAP[sectionIndex] ?? 0);
-    } else {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-      const checkScrollDone = () => {
-        if (window.scrollY <= 5) {
-          setShowTooltip(true);
-          setTimeout(() => setShowTooltip(false), 3000);
-        } else {
-          requestAnimationFrame(checkScrollDone);
-        }
-      };
-      requestAnimationFrame(checkScrollDone);
+    const section = sections[sectionIndex];
+    if (onSetPrompt && section.prompt) {
+      onSetPrompt(section.prompt);
     }
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
