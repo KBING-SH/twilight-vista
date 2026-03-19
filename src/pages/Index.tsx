@@ -33,6 +33,7 @@ const Index = () => {
   const [selectedHistoryIdx, setSelectedHistoryIdx] = useState<number | null>(null);
   const [previewIdx, setPreviewIdx] = useState<number | null>(null);
   const styleSetterRef = useRef<((styleIndex: number) => void) | null>(null);
+  const promptSetterRef = useRef<((prompt: string) => void) | null>(null);
 
   const handleSelectStyle = useCallback((styleIndex: number) => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -96,13 +97,13 @@ const Index = () => {
 
         {/* Left sidebar - desktop */}
         <aside className="hidden lg:flex lg:w-[30%] shrink-0 border-r border-border/50 bg-card">
-          <UploadPanel onGenerate={handleGenerate} externalStyleRef={styleSetterRef} />
+          <UploadPanel onGenerate={handleGenerate} externalStyleRef={styleSetterRef} externalPromptRef={promptSetterRef} />
         </aside>
 
         {/* Mobile/Tablet: UploadPanel + Result */}
         <div className="flex-1 lg:w-[70%] min-w-0 flex flex-col overflow-hidden">
           <div className="lg:hidden flex-1 min-h-0 overflow-hidden">
-            <UploadPanel onGenerate={handleGenerate} externalStyleRef={styleSetterRef} />
+            <UploadPanel onGenerate={handleGenerate} externalStyleRef={styleSetterRef} externalPromptRef={promptSetterRef} />
           </div>
 
           {/* Mobile: result display OR hero intro */}
@@ -235,7 +236,10 @@ const Index = () => {
           <ToolFeatures />
           <HowItWorks />
           
-          <ContentSections onSelectStyle={handleSelectStyle} />
+          <ContentSections onSelectStyle={handleSelectStyle} onSetPrompt={(prompt) => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+            promptSetterRef.current?.(prompt);
+          }} />
           <WhyChoose />
           <TestimonialsSection />
           <FAQSection />

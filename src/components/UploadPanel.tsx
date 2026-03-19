@@ -69,7 +69,7 @@ const RATIOS = [
 const RESOLUTIONS = ["1 MP", "2 MP", "4 MP"];
 const FORMATS = ["WebP", "JPG", "PNG"];
 
-export function UploadPanel({ onGenerate, externalStyleRef }: { onGenerate?: (styleImg: string, ratio: string) => void; externalStyleRef?: React.MutableRefObject<((styleIndex: number) => void) | null> } = {}) {
+export function UploadPanel({ onGenerate, externalStyleRef, externalPromptRef }: { onGenerate?: (styleImg: string, ratio: string) => void; externalStyleRef?: React.MutableRefObject<((styleIndex: number) => void) | null>; externalPromptRef?: React.MutableRefObject<((prompt: string) => void) | null> } = {}) {
   const [isDragging, setIsDragging] = useState(false);
   const [showLoginDialog, setShowLoginDialog] = useState(false);
   const [uploadedImage, setUploadedImage] = useState<string | null>(null);
@@ -91,6 +91,13 @@ export function UploadPanel({ onGenerate, externalStyleRef }: { onGenerate?: (st
         setSelectedStyle(styleIndex);
         setPromptText(STYLE_OPTIONS[styleIndex].prompt);
       }
+    };
+  }
+
+  // Expose a method to set prompt externally
+  if (externalPromptRef) {
+    externalPromptRef.current = (prompt: string) => {
+      setPromptText(prompt);
     };
   }
 
