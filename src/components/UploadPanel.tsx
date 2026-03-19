@@ -6,6 +6,8 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Select, SelectContent, SelectItem, SelectTrigger } from "@/components/ui/select";
 import { cn } from "@/lib/utils";
 
+const PROMPT_SHORTCUTS = ["replace background", "sketch-to-storyboard", "change hair color", "switch clothing", "expression adjuster", "object remover"];
+
 
 import logoChatgpt from "@/assets/logo-chatgpt.png";
 import logoBanana from "@/assets/logo-banana.png";
