@@ -113,10 +113,10 @@ const Index = () => {
               <div className="px-3 py-4 space-y-3">
                 <div className="text-center">
                   <h1 className="text-xl font-bold text-title leading-tight mb-1.5">
-                    Free Online Photo to Cartoon
+                    Free AI Image Editor
                   </h1>
                   <p className="text-muted-foreground text-xs leading-relaxed max-w-xs mx-auto">
-                    Upload your photo and Rita AI will generate fun cartoon images in multiple styles. Supports portraits, pets, landscapes and more — simple to use, ready in seconds.
+                    Create stunning edits in seconds, powered by AI that makes design simple for everyone.
                   </p>
                 </div>
                 <div className="w-full aspect-[16/9] rounded-xl overflow-hidden">
@@ -130,10 +130,10 @@ const Index = () => {
           <div className="hidden lg:flex flex-col items-center justify-start pt-4 px-4 md:px-6 flex-1 overflow-hidden">
             <div className="text-center shrink-0 mb-4">
               <h1 className="text-3xl md:text-5xl font-bold text-title leading-tight mb-3 md:mb-4">
-                Free Online Photo to Cartoon
+                Free AI Image Editor
               </h1>
               <p className="text-muted-foreground text-sm md:text-lg max-w-2xl mx-auto leading-relaxed">
-                Upload your photo and Rita AI will generate fun cartoon images in multiple styles. Supports portraits, pets, landscapes and more — simple to use, ready in seconds.
+                Create stunning edits in seconds, powered by AI that makes design simple for everyone.
               </p>
             </div>
             <div className={`flex-1 min-h-0 w-full px-4 flex items-end justify-center relative ${history.length > 0 ? "pb-4" : "pb-[180px]"}`}>
